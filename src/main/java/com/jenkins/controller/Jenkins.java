@@ -10,6 +10,6 @@ public class Jenkins {
 
     @GetMapping
     public String message(){
-        return "Before Update";
+        return "Before the Update";
     }
 }
