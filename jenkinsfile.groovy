@@ -1,11 +1,20 @@
-node('master'){
-    try{
-        stage('build'){
-            ./gradlew build
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                ./gradlew Build
+            }
         }
-    } catch(error){
-        throw error
-    } finally {
-        println "executed Jenkinsfile"
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
     }
 }
