@@ -10,6 +10,6 @@ public class Jenkins {
 
     @GetMapping
     public String message(){
-        return "After configuring jenkins file";
+        return "After configuring Jenkinsfile";
     }
 }
