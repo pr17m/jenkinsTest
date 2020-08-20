@@ -6,14 +6,9 @@ pipeline {
                 sh './gradlew build'
             }
         }
-        stage('Test') { 
-            steps {
-                // 
-            }
-        }
         stage('Deploy') { 
             steps {
-                // 
+                sh 'echo "BuildSuccessful"' 
             }
         }
     }
