@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'echo "BuildSuccessful"' 
+                sh 'java -jar build/libs/demo-1.0.0-SNAPSHOT-boot.jar' 
             }
         }
     }
